@@ -21,7 +21,7 @@ O SUS publica dados abertos em formato `.dbc`, que é um formato binário espec�
 
 ## Dependências e versões
 
-> **Atenção:** É fundamental que as bibliotecas estejam exatamente nas versões especificadas no arquivo `requirements.txt`. Isso garante a compatibilidade entre as bibliotecas, especialmente entre `pyreaddbc`, `pandas` e `numpy`, evitando erros de execução.
+> **Atenção:** É fundamental que as bibliotecas estejam exatamente nas versões especificadas no arquivo `requirements.txt`. Isso garante a compatibilidade entre as bibliotecas, especialmente entre `pyreaddbc`, `pandas` e `numpy`, evitando erros de execução. Além disso, o sistema só consegue rodar em sistemas **Linux** por conta da dependência do pacote `setuptools`.
 
 Se precisar reinstalar as dependências, use:
 ```bash
