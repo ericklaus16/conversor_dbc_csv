@@ -17,6 +17,17 @@ for filename in os.listdir(input_dir):
         # Lê o arquivo DBC 
         df = pyreaddbc.read_dbc(dbc_path)
 
+        def decode_cell(x):
+            if isinstance(x, bytes):
+                try:
+                    return x.decode('utf-8')
+                except UnicodeDecodeError:
+                    return x.decode('latin1')
+            return x
+
+        # Binário -> String
+        df = df.applymap(decode_cell)
+
         # Salva como CSV
         df.to_csv(csv_path, index=False)
         print(f'Convertido: {dbc_path} -> {csv_path}')
