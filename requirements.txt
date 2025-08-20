@@ -1,0 +1,12 @@
+cffi==1.17.1
+dbfread==2.0.7
+numpy==1.23.5
+pandas==1.5.3
+pycparser==2.22
+pyreaddbc==1.1.0
+python-dateutil==2.9.0.post0
+pytz==2025.2
+PyYAML==6.0.2
+six==1.17.0
+tqdm==4.67.1
+tzdata==2025.2
