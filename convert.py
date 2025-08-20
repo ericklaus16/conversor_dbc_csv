@@ -29,5 +29,5 @@ for filename in os.listdir(input_dir):
         df = df.applymap(decode_cell)
 
         # Salva como CSV
-        df.to_csv(csv_path, index=False)
+        df.to_csv(csv_path, index=False, sep=";")
         print(f'Convertido: {dbc_path} -> {csv_path}')
